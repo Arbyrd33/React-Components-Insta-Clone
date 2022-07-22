@@ -8,8 +8,7 @@ const Comments = props => {
 
   return (
     <div>
-      <Comment />
-      {/* {console.log(comments.id) /*it's undefined... sigh*/} */}
+      {/* {console.log(comments.id) /*it's undefined... sigh*/}
       {/* map through the comments prop and render a Comment for every piece of data */}
     </div>
   );
