@@ -21,12 +21,15 @@ const App = () => {
 
   const likePost = postId => {
     console.log(posts)
+    const liked = posts.map(post => {
+      if (post.id === postId){
+        return { ...post, likes: (post.likes + 1)}
+      } else {
+        return post;}
+    })
+
     setPosts(
-      posts.map((postId) => {
-        if (posts.id === postId){
-          return { ...posts, likes: (posts.likes + 1)}
-        } else {return posts}
-      })
+      liked
     ) 
     /*
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
@@ -41,7 +44,7 @@ const App = () => {
      */
 
   };
-  likePost();
+
 
   return (
     <div className='App'>
