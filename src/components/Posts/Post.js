@@ -18,7 +18,7 @@ const Post = props => {
       {/* Is LikeSection getting all the props it needs to work correctly? 
       I'M PRETTY SURE BUT LIKE-*/}
 
-      <LikeSection likePost={() => likePost(post.id)} likes = {post.likes}/>
+      <LikeSection likePost={() => likePost(post.id)} numberOfLikes = {post.likes}/>
       {/* Comments also wants its props! 
       STILL CAN'T FIND the source of the error so I'm gonna move on to the comments component and *pray* man*/}
       <Comments />
