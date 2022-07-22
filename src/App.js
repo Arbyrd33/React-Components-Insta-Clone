@@ -28,9 +28,7 @@ const App = () => {
         return post;}
     })
 
-    setPosts(
-      liked
-    ) 
+    setPosts(liked);
     /*
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
 
